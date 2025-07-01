@@ -1,0 +1,145 @@
+.review-container {
+    padding: 4rem 0;
+}
+
+.review-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.review-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.review-header p {
+    color: var(--secondary-color);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.review-user-info h4 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.review-user-info p {
+    margin: 0;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.review-rating {
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.review-date {
+    color: #adb5bd;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.write-review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.write-review-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.rating-select {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.rating-select label {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.rating-select input[type="radio"] {
+    display: none;
+}
+
+.rating-select input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+.rating-select label:hover,
+.rating-select label:hover ~ label {
+    color: #ffc107;
+}
+
+.rating-select label i {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.rating-select input[type="radio"]:checked ~ label i {
+    color: #ffc107;
+}
+
+.rating-select label:hover i,
+.rating-select label:hover ~ label i {
+    color: #ffc107;
+}
+
+.review-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.review-btn:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
